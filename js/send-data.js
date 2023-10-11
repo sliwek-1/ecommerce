@@ -23,7 +23,6 @@ function main(){
             }
         })
     })
-    
 }
 
 async function register(){
