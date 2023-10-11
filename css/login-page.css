@@ -7,6 +7,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+*::placeholder{
+    color: white;
+}
+
 .main{
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     width: 100vw;
@@ -58,10 +62,15 @@
 form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 5vh;
+    padding: 50px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgba(255,255,255,0.2);
 }
 
-.input{
+.input:not(.check-haslo){
     width: 20vw;
     height: 5vh;
     color: white;
@@ -86,3 +95,34 @@ h1{
 .icon{
     color: white;
 }
+
+.show-passwd-section{
+    width: 20vw;
+    display: flex;
+    gap: 5vw;
+    color: white;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.btn{
+    width: 20vw;
+    height: 4vh;
+    cursor: pointer;
+    border: none;
+    transition: 300ms;
+    color: white;
+    background-color: rgba(48, 207, 208,0.5);
+    border-radius: 5px;
+}
+
+.btn:hover{
+    filter: drop-shadow(16px 16px 50px rgba(255,255,255,0.5));
+}
+

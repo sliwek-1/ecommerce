@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login-page.css">
+    <script src="./js/send-register-data.js" defer></script>
+    <script src="./js/send-login-data.js" defer></script>
     <title>E-commerce</title>
 </head>
 <body>
@@ -17,18 +19,13 @@
                     <input type="text" name="imie" class="input" placeholder="Imie">
                     <input type="text" name="nazwisko" class="input" placeholder="Nazwisko">
                     <input type="email" name="email" class="input" placeholder="Email">
+                    <input type="password" name="haslo" class="input" placeholder="Hasło">
                     <div class="show-passwd-section">
-                        <input type="password" name="haslo" class="input" placeholder="Hasło">
                         <div class="show-passwd-btn">
-                            <input type="checkbox" name="show-passwd" class="input">
-                            <div class="icon show">
-                                <ion-icon name="eye-outline"></ion-icon>
-                            </div>
-                            <div class="icon hide">
-                                <ion-icon name="eye-off-outline"></ion-icon>
-                            </div>
+                            Pokaż hasło: <input type="checkbox" name="show-passwd" class="input check-haslo">
                         </div>
                     </div>  
+                    <button type="sybmit" class="btn rejestruj">Zarejestruj</button>
                 </form>
             </div>
         </section>
@@ -39,18 +36,13 @@
             <div class="form-section">
                 <form action="#" method="#" class="register-from form">
                     <input type="email" name="email" class="input" placeholder="Email">
+                    <input type="password" name="haslo" class="input" placeholder="Hasło">
                     <div class="show-passwd-section">
-                        <input type="password" name="haslo" class="input" placeholder="Hasło">
                         <div class="show-passwd-btn">
-                            <input type="checkbox" name="show-passwd" class="input">
-                            <div class="icon show">
-                                <ion-icon name="eye-outline"></ion-icon>
-                            </div>
-                            <div class="icon hide">
-                                <ion-icon name="eye-off-outline"></ion-icon>
-                            </div>
+                            Pokaż hasło: <input type="checkbox" name="show-passwd" class="input check-haslo">
                         </div>
                     </div>
+                    <button type="sybmit" class="btn logowanie">Zaloguj</button>
                 </form>
             </div>
         </section>
