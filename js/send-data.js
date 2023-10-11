@@ -27,7 +27,15 @@ function main(){
 
 async function register(){
     try{
-        let request = await fetch('php/register.php');
+        let registerForm = document.querySelector('.register-form');
+        let formData = new FormData(registerForm)
+        let request = await fetch('php/register.php', {
+            method: 'POST',
+            body: formData
+        });
+
+        let response = await request.text();
+        console.log(response)
     }catch(error){
         console.log(error);
     }
